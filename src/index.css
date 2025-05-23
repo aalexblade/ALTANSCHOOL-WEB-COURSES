@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+:root {
+  --font-family: 'Crimson Text', sans-serif;
+  --color-text: #000;
+  --color-background: #faf9f8;
+  --color-focus: #8e9a82;
+}
+
+@tailwind utilities;
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-text);
+  background-color: var(--background);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  color: var(--hover-color);
+  outline: none;
+}
+
+img[src$='.svg'] {
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+
+.about-us__button{
+  border: 5px solid #8e9a82;
+border-radius: 10px;
+}
+
+.about-us__button:focus{
+  background-color: #8e9a82;
+}
+
+.follow-us__input,
+.follow-us__textarea{
+  border: 5px solid #8e9a82;
+border-radius: 10px;
+}
+
